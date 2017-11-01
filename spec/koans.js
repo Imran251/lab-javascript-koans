@@ -146,12 +146,6 @@ describe("the JavaScript language", function() {
       //expect(someVar(1,1)).toBe();
     });
 
-    it("may return anything", function() {
-      function example(arg) {
-        return [arg, arg * 2, arg * 3];
-      }
-
-      var result = example(2);
 
       //expect(result[1]).toEqual();
     });
@@ -180,6 +174,24 @@ describe("the JavaScript language", function() {
       var exampleA = function() {
           return exampleB(1);
       };
+
+      it("can declare anonymous functions", function() {
+        var someVar = function(a, b) {
+          return a + b;
+        };
+
+        it("can declare anonymous functions", function() {
+          var someVar = function(a, b) {
+            return a + b;
+          };
+
+          it("can declare anonymous functions", function() {
+            var someVar = function(a, b) {
+              return a + b;
+            };
+          }
+
+
 
       //expect(exampleA()).toEqual(1);
 
